@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+body{
+}
+
+.bg{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(45deg,#EF629F, #FC466B, #3F5EFB, #3fd5fb, #3ffb8d);
+    background-position: 50% 50%;
+    background-size: 400%;
+    animation: anim 25s infinite alternate;
+}
+
+h1{
+    margin: 0;
+    font: normal 400 55px 'Work Sans';
+    text-align: center;
+    color: #fff;
+}
+
+strong{
+    color: rgb(223, 223, 223);
+}
+
+span{
+    color: #ff0033;
+    text-shadow: 0 0 0 5px black;
+}
+
+@keyframes anim{
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+
+video{
+    width: 500px;
+    margin: 70px 10px 10px 10px;
+    padding: 0;
+}
