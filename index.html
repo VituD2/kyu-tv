@@ -11,11 +11,19 @@
 <body>
     <div class="bg">
         <div><h1><strong><span>YOU</span>TUBE</strong> DA DEEP WEB</h1></div>
-        <video src="1.mp4" controls></video>
-        <video src="2.mp4" controls></video>
-        <video src="3.mp4" controls></video>
-        <video src="4.mp4" controls style="margin-left: 230px;"></video>
-        <video src="5.mp4" controls></video>
+        <video id="vid" src="1.mp4" controls></video>
+        <video id="vid" src="2.mp4" controls></video>
+        <video id="vid" src="3.mp4" controls></video>
+        <video id="vid" src="4.mp4" controls style="margin-left: 230px;"></video>
+        <video id="vid" src="5.mp4" controls></video>
     </div>
+    <script>
+        let idk = document.querySelectorAll('#vid');
+        console.log(idk);
+
+        for (let i=0; i < idk.length; i++) {
+            idk[i].volume = 0.5;
+        }
+    </script>
 </body>
 </html>
