@@ -17,6 +17,7 @@ a{
     --gradient: linear-gradient(45deg,#e90019, #a423ba, #4f11ba, #2d00d1, #090979, #010011);
     --title: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     --text: 'Work Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --insta: linear-gradient(145deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
 }
 
 html{
@@ -25,9 +26,7 @@ html{
 
 body{
     width: 100%;
-    height: 100%;
     max-width: 100%;
-    min-height: max-content;
     background-image: var(--gradient);
     background-position: 50% 50%;
     background-size: 400%;
@@ -45,6 +44,7 @@ header{
     height: 60px;
     background-color: rgba(255, 255, 255, 0.875);
     backdrop-filter: blur(12px);
+    box-shadow: 0px 1.5px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 header label img{
@@ -96,6 +96,7 @@ nav ul li:hover{
 .final-icon i:hover{
     background-image: var(--gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     background-size: 400%;
     animation: anim 5s infinite alternate;
@@ -107,6 +108,8 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    padding: 120px 0 170px 0;
 }
 
 main h1{
@@ -114,17 +117,11 @@ main h1{
     color: #fff;
     letter-spacing: 30px;
     margin: 0;
-    margin-top: 100px;
-}
-
-.vids-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-shadow:  1px 2px 2px rgba(0, 0, 0, 0.6);
 }
 
 .vids{
-    display: inline-block;
+    width: 81.5vw;
 
 }
 
@@ -138,7 +135,6 @@ footer{
     flex-direction: column;
     text-align: center;
     background-color: #fff;
-    margin-top: 200px;
 }
 
 footer h1{
@@ -150,10 +146,50 @@ footer h1{
     margin-bottom: 20px;
 }
 
+.info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.comment{
+    display: flex   ;
+}
+
 footer p{
     font: italic 300 18px var(--text);
     color: #1a1a1a;
     padding: 15px 0;
+}
+
+.social{
+    display: flex;
+}
+
+.social a{
+    margin: 0 7px;
+
+}
+
+.social i{
+    font-size: 35px;
+    color: #1a1a1a;
+    transition: all .3s ease;
+}
+
+.social .fa-instagram:hover{
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: var(--insta);
+}
+
+.social .fa-twitter:hover{
+    color: #1DA1F2;
+}
+
+.social .fa-youtube:hover{
+    color: 	#FF0000;
 }
 
 
