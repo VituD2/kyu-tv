@@ -30,7 +30,7 @@ body{
     background-image: var(--gradient);
     background-position: 50% 50%;
     background-size: 400%;
-    animation: anim 25s infinite alternate;
+    animation: bg_anim 25s infinite alternate;
 }
 
 header{
@@ -58,6 +58,28 @@ label{
     cursor: pointer;
 }
 
+/* .main-logo{
+}
+
+.second-logo{
+} */
+
+.second-logo:hover{
+    animation: zoomLogo .2s ease-out;
+    transform: scale(1.2);
+}
+
+/* .second-logo:hover{
+    transform: scale(1.2);
+} */
+
+.hide-logo{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+}
+
 nav{
     max-height: 60px;
 }
@@ -78,7 +100,7 @@ nav ul li:hover{
     background-clip: text;
     color: transparent;
     background-size: 400%;
-    animation: anim 5s infinite alternate;
+    animation: bg_anim 5s infinite alternate;
 }
 
 .final-icon{
@@ -99,7 +121,7 @@ nav ul li:hover{
     background-clip: text;
     color: transparent;
     background-size: 400%;
-    animation: anim 5s infinite alternate;
+    animation: br_anim 5s infinite alternate;
 }
 
 
@@ -133,7 +155,6 @@ footer{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
     background-color: #fff;
 }
 
@@ -144,6 +165,7 @@ footer h1{
     margin: 0;
     padding: 5px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .info{
@@ -193,7 +215,29 @@ footer p{
 }
 
 
-@keyframes anim{
+@keyframes bg_anim{
     0% {background-position: left;}
     100% {background-position: right;}
+}
+
+@keyframes zoomLogo {
+    0% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+    }
+}
+
+@keyframes zoomOutLogo {
+    0% {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0); 
+    }
 }
