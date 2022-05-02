@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+*{
+    /* border: 1px solid red; */
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.clips-section{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    flex-direction: column;
+    width: 82vw;
+}
+
+.clips-title{
+    text-align: center;
+    font: normal 300 70px var(--title);
+    color: #fff;
+    letter-spacing: 30px;
+    margin: 0;
+    text-shadow:  1px 2px 2px rgba(0, 0, 0, 0.6);
+}
