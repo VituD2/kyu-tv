@@ -37,10 +37,11 @@ body{
     width: 100%;
     max-width: 100%;
     background-color: var(--bg-dark-gray);
-    /* background-image: var(--gradient);
+    /* background-image: url('/kyu-tv/images/space-bg.png');
     background-position: 50% 50%;
-    background-size: 400%;
-    animation: bg_anim 25s infinite alternate; */
+    background-size: cover;
+    background-attachment: fixed; */
+    /* animation: bg_anim 25s infinite alternate; */
 }
 
 header{

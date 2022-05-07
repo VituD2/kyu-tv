@@ -6,6 +6,17 @@
     text-decoration: none;
 }
 
+html{
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+main{
+    width: 100%;
+    min-height: 100%;
+}
+
 
 .clips-section{
     display: flex;
