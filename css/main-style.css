@@ -139,7 +139,7 @@ nav ul li:hover{
 }
 
 
-main{
+main#pag1-main{
     display: flex;
     width: 100%;
     padding: 120px 0 170px 0;
@@ -147,7 +147,7 @@ main{
     max-height: 350px;
 }
 
-main h1{
+main#pag1-main h1{
     font: normal 300 70px var(--title);
     color: #fff;
     letter-spacing: 30px;

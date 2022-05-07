@@ -12,12 +12,16 @@ html{
     overflow-x: hidden;
 }
 
-main{
+main#pag2-main{
+    display: flex;
     width: 100%;
     min-height: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 150px;
 }
 
-
+/* 
 .clips-section{
     display: flex;
     align-items: center;
@@ -26,6 +30,11 @@ main{
     padding-top: 50px;
     flex-direction: column;
     width: 82vw;
+} */
+
+main#pag2-main .clips-section{
+    width: 82vw;
+
 }
 
 .clips-title{
@@ -33,6 +42,6 @@ main{
     font: normal 300 70px var(--title);
     color: #fff;
     letter-spacing: 30px;
-    margin: 0;
+    margin: 50px 0 30px 0;
     text-shadow:  1px 2px 2px rgba(0, 0, 0, 0.6);
 }
